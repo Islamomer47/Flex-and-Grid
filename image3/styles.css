@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f9f9f9;
+  font-size: large;
+  background-color: rgb(171, 230, 243);
+  display: grid;
+  height: 600px;
+  grid-gap: 2px;
+}
+
+.container {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr 20px;
+  grid-template-areas:
+    "header header header header header header header "
+    "Aside Aside  article article article article"
+    "Aside  Aside  article article article article"
+    "Aside  Aside  article article article article"
+    "Aside  Aside  article article article article"
+    " footer footer footer footer footer footer";
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  grid-area: header;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 1%;
+  text-align: center;
+
+  background-color: rgb(53, 165, 171);
+  margin: 15px;
+}
+p {
+  float: ;
+}
+.Aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  grid-area: Aside;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  text-align: center;
+  padding-bottom: 15%;
+  padding-top: 1%;
+  background-color: rgb(70, 180, 100);
+  margin: 15px;
+}
+.Article {
+  display: flex;
+  flex-direction: rows;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid #ccc;
+  grid-area: article;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  text-align: center;
+  padding-bottom: 15%;
+  padding-top: 5%;
+  background-color: rgb(254, 151, 24);
+  margin: 10px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 65%;
+  background-color: #f1c751;
+  color: #ffffff;
+  margin: 270px 10px 0px 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #358586;
+  grid-area: footer;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  text-align: center;
+  padding: 1%;
+  background-color: rgb(53, 165, 171);
+  margin: 15px;
+}
