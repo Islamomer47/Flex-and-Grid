@@ -10,11 +10,11 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "header header header header header header "
-    "section2 section1 main main main main"
+    "section2 section2 main main main main"
     "section3 section3 main main main main"
     "section3 section3 extra extra extra extra"
     "images images images  images posts posts"
-    " footer footer footer footer footer footer";
+    " footer1 footer1 footer1 footer2 footer2 footer2";
   grid-gap: 3px;
   background-color: #fdfdfd;
 }
